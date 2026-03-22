@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h2>Congratulations!</h2>
+<p>Your Score: {{ score }} / {{ total }}</p>
+
+<h3>Selected Answers:</h3>
+<ul>
+    {% for choice in choices %}
+        <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
